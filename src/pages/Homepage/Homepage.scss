@@ -1,0 +1,21 @@
+@import '../../SCSS/config.scss';
+
+.homepage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 3rem;
+  justify-content: space-between;
+
+  &__intro h1 {
+    font-family: $headerFont;
+    font-size: 55px;
+    line-height: 2;
+  }
+
+  &__intro p {
+    font-size: 28px;
+    line-height: 1.7;
+  }
+}

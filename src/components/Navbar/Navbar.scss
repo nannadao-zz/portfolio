@@ -1,0 +1,45 @@
+@import '../../SCSS/config.scss';
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+
+  &__logo {
+    margin-left: 3rem;
+  }
+
+  &__logo img {
+    height: 50px;
+  }
+
+  &__pages {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+
+    & > li {
+      margin: 0 1rem;
+    }
+
+    & > li:last-of-type {
+      margin-left: 1rem;
+      margin-right: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+ul, li {
+  list-style: none;
+
+}
