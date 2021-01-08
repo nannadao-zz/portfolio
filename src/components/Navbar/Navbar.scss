@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  z-index: 1000;
 
   &__logo {
     margin-left: 3rem;
@@ -23,23 +24,23 @@
 
     & > li {
       margin: 0 1rem;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 18px;
     }
 
     & > li:last-of-type {
       margin-left: 1rem;
       margin-right: 0;
     }
+
+    & > li:hover {
+      cursor: pointer;
+    }
   }
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 20px;
-}
-
 ul, li {
-  list-style: none;
-
+  margin-left: 1em;
 }
