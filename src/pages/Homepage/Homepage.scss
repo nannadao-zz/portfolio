@@ -1,7 +1,7 @@
 @import '../../SCSS/config.scss';
 
 .homepage {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,7 +31,7 @@
 
   &__intro {
     & > h1 {
-      font-family: $headerFont;
+      font-family: 'Roboto', sans-serif;
       font-size: 40px;
       line-height: 2;
     }
@@ -63,7 +63,7 @@
         animation: highlighter 500ms ease-in forwards;
       }
       
-      --background-color: #444DF2;
+      --background-color: #818AFC;
     }
   }
 }

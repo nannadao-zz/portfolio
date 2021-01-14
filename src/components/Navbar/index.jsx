@@ -40,10 +40,22 @@ const Navbar = () => {
         <li>
           <Link
             activeClass='active'
+            to='homepage'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={400}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass='active'
             to='projects'
             spy={true}
             smooth={true}
-            offset={smallScreen ? -120 : -80}
+            offset={smallScreen ? -120 : -70}
             duration={400}
           >
             Projects
@@ -67,7 +79,7 @@ const Navbar = () => {
             to='contact'
             spy={true}
             smooth={true}
-            offset={smallScreen ? -120 : -80}
+            offset={smallScreen ? -120 : -70}
             duration={400}
           >
             Contact

@@ -78,7 +78,7 @@
       text-decoration: none;
       margin-right: 1rem;
       padding: 0.5em 1em;
-      color: blue;
+      color: $primary;
       border: 1px solid $primary;
       font-weight: 500;
       border-radius: 20px;
@@ -109,7 +109,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $headerFont;
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   color: white;

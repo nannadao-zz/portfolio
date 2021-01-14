@@ -62,69 +62,71 @@ const Contact = () => {
 
   return (
     <div className='contact' id='contact'>
-      <div className='contact__title'>Contact Me</div>
-      {formSuccess ? (
-        <div className='contact__message contact__message--success'>
-          Thank you! I will get back to you as soon as possible.
-        </div>
-      ) : (
-        <div className='contact__message contact__message--error'> {formError} </div>
-      )}
-      <form onSubmit={handleFormSubmit} className='contact__form'>
-        <div className='form__content'>
-          <label htmlFor='to_email' className='form__label'>
-            To:
-          </label>
-          <input
-            disabled
-            type='email'
-            name='to_email'
-            id='to_email'
-            value={receiverEmail}
-            className='form__input'
-          />
-        </div>
-        <div className='form__content'>
-          <label htmlFor='from_email' className='form__label'>
-            From:
-          </label>
-          <input
-            required
-            type='email'
-            value={senderEmail}
-            name='from_email'
-            id='from_email'
-            className='form__input'
-            onChange={handleSenderChange}
-          />
-        </div>
-        <div className='form__content'>
-          <label htmlFor='message' className='form__label'>
-            Message:
-          </label>
-          <textarea
-            required
-            className='form__input'
-            id='message'
-            name='message'
-            onChange={handleChange}
-            placeholder='Enter your message here'
-            value={message}
-          />
-        </div>
+      <div className='contact__container'>
+        <div className='contact__title'>Contact Me</div>
+        {formSuccess ? (
+          <div className='contact__message contact__message--success'>
+            Thank you! I will get back to you as soon as possible.
+          </div>
+        ) : (
+          <div className='contact__message contact__message--error'> {formError} </div>
+        )}
+        <form onSubmit={handleFormSubmit} className='contact__form'>
+          <div className='form__content'>
+            <label htmlFor='to_email' className='form__label'>
+              To:
+            </label>
+            <input
+              disabled
+              type='email'
+              name='to_email'
+              id='to_email'
+              value={receiverEmail}
+              className='form__input'
+            />
+          </div>
+          <div className='form__content'>
+            <label htmlFor='from_email' className='form__label'>
+              From:
+            </label>
+            <input
+              required
+              type='email'
+              value={senderEmail}
+              name='from_email'
+              id='from_email'
+              className='form__input'
+              onChange={handleSenderChange}
+            />
+          </div>
+          <div className='form__content'>
+            <label htmlFor='message' className='form__label'>
+              Message:
+            </label>
+            <textarea
+              required
+              className='form__input'
+              id='message'
+              name='message'
+              onChange={handleChange}
+              placeholder='Enter your message here'
+              value={message}
+            />
+          </div>
 
-        <div className='form__btn'>
-          <button className='form__btn--cancel' onClick={handleFormCancel}>
-            Cancel
-          </button>
-          <input
-            type='submit'
-            value={formSubmitted ? 'Sending...' : formSuccess ? 'Sent!' : 'Send!'}
-            disabled={formSubmitted ? true : formSuccess ? true : false}
-            className='form__btn--submit'
-          />
-        </div>
-      </form>
+          <div className='form__btn'>
+            <button className='form__btn--cancel' onClick={handleFormCancel}>
+              Cancel
+            </button>
+            <input
+              type='submit'
+              value={formSubmitted ? 'Sending...' : formSuccess ? 'Sent!' : 'Send!'}
+              disabled={formSubmitted ? true : formSuccess ? true : false}
+              className='form__btn--submit'
+            />
+          </div>
+        </form>
+      </div>
     </div>
   )
 }

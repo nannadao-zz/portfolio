@@ -1,12 +1,30 @@
 @import '../../SCSS/config.scss';
 
 .contact {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 70px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 1rem 3rem 0 3rem;
+  background: #A770EF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.65) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 1.5rem 0;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+    opacity: 80%;
+  }
 
   &__title {
     font-size: 30px;
@@ -57,12 +75,28 @@
 
     & > input {
       font-size: 16px;
-      padding: 0.5em;
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      font-size: 16px;
+      background-color:rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      box-shadow: inset 1px 1px 8px rgba(255, 255, 255, 0.7);
+      border: none;
     }
 
     & > textarea {
       font-family: $mainFont;
-      height: 250px;
+      min-height: 250px;
+      padding: 1rem;
+      font-size: 16px;
+      background: rgba(#ffffff, 0.2);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      background-color:rgba(255, 255, 255, 0.2);
+      box-shadow: inset 1px 1px 8px rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      border: none;
     }
   }
 
@@ -73,11 +107,16 @@
     &--cancel {
       font-size: 16px;
       padding: 0.5em 2em;
-      border: 1px solid $secondary;
       border-radius: 20px;
       margin-right: 15px;
-      color: $secondary;
-
+      background-color:rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      box-shadow: inset 1px 1px 8px rgba(255, 255, 255, 0.7);
+      border: none;
+      color: rgb(31, 31, 31);
+      font-weight: 600;
+      
       &:hover {
         cursor: pointer;
       }
@@ -88,11 +127,20 @@
       border: none;
       border-radius: 20px;
       background-color: $secondary;
-      color: white;
+      color: rgb(31, 31, 31);
       font-size: 16px;
+      font-weight: 600;
+      box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.25);
 
       &:hover {
         cursor: pointer;
+        box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3), 3px 3px 8px rgba(0, 0, 0, 0.25);
+      }
+
+      &:focus {
+        cursor: pointer;
+        box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3);
+        outline: none !important;
       }
     }
   }
