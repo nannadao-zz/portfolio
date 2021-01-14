@@ -16,7 +16,7 @@ const About = () => (
         <br />
         <br />I am skilled in{' '}
         <b> JavaScript, Python, React, TypeScript, Django, PostgreSQL, MongoDB</b>, as well as{' '}
-        <b>Docker</b> and <b>AWS</b>.
+        <b>Git/Github, Docker</b> and <b>AWS</b>.
         <br />
         Besides coding, I also actively focus on the UI/UX Design in all of my projects. Hence, I am
         comfortable with using <b>Adobe Creative Suite</b> & <b>Figma</b>.
