@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 
-import webspyder from '../../assets/webspyder.png'
 import joinme from '../../assets/joinme.png'
 import './Projects.scss'
 
@@ -113,7 +112,7 @@ const Projects = () => (
         Below is a mutual Github repository where the team's effort is combined!
       </p>
       <div className='section__media--inprogress'>
-        <div class='img-overlay'>In progress</div>
+        <div className='img-overlay'>In progress</div>
         <img src={joinme} alt='joinme' />
       </div>
       <div className='section__links'>

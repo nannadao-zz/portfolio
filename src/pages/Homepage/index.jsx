@@ -2,6 +2,7 @@ import React from 'react'
 
 import Portrait from '../../components/Portrait'
 import Projects from '../../pages/Projects'
+import Contact from '../../pages/Contact'
 import './Homepage.scss'
 
 const Homepage = () => (
@@ -20,12 +21,15 @@ const Homepage = () => (
         </div>
       </div>
       <div className='homepage__scroll'>
-        <i class='fas fa-chevron-down fa-lg'></i>
+        <i className='fas fa-chevron-down fa-lg'></i>
         <p> See my projects </p>
       </div>
     </div>
     <div className='projects'>
       <Projects />
+    </div>
+    <div className='contact'>
+      <Contact />
     </div>
   </>
 )

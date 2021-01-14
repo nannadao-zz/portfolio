@@ -1,0 +1,131 @@
+@import '../../SCSS/config.scss';
+
+.contact {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 3rem 0 3rem;
+
+  &__title {
+    font-size: 30px;
+    font-family: $headerFont;
+  }
+
+  &__message {
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+
+    &--success {
+      background-color: #29F2BC;
+      font-weight: 500;
+    }
+
+    &--error {
+      background-color: #F0B2AE;
+      font-weight: 500;
+    }
+  }
+
+  &__form {
+    margin: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.form {
+  &__label {
+    grid-area: label;
+  }
+
+  &__input {
+    grid-area: input;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'label input';
+    margin-bottom: 1em;
+    align-items: center;
+
+    & > input {
+      font-size: 16px;
+      padding: 0.5em;
+    }
+
+    & > textarea {
+      font-family: $mainFont;
+      height: 250px;
+    }
+  }
+
+
+  &__btn {
+    align-self: flex-end;
+    
+    &--cancel {
+      font-size: 16px;
+      padding: 0.5em 2em;
+      border: 1px solid $secondary;
+      border-radius: 20px;
+      margin-right: 15px;
+      color: $secondary;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &--submit {
+      padding: 0.5em 2em;
+      border: none;
+      border-radius: 20px;
+      background-color: $secondary;
+      color: white;
+      font-size: 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact__form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .contact__form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact {
+    margin: 2rem 2rem 0 2rem;
+
+    &__form {
+      margin: 1rem 0;
+    }
+  }
+  
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    & > label {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
