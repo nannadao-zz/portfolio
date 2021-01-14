@@ -61,7 +61,7 @@ const Contact = () => {
   }
 
   return (
-    <>
+    <div className='contact' id='contact'>
       <div className='contact__title'>Contact Me</div>
       {formSuccess ? (
         <div className='contact__message contact__message--success'>
@@ -125,7 +125,7 @@ const Contact = () => {
           />
         </div>
       </form>
-    </>
+    </div>
   )
 }
 

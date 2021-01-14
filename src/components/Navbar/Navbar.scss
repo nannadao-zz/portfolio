@@ -5,9 +5,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: sticky;
   justify-content: space-between;
-  height: 80px;
+  height: 70px;
   z-index: 1000;
+  background-color: #F2F2F2;
+
+  &--scroll {
+    box-shadow: 0px 12px 15px -12px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 0px 12px 15px -12px rgba(0, 0, 0, 0.36);
+  }
 
   &__logo {
     margin-left: 3rem;
@@ -49,14 +56,15 @@ ul, li {
   .navbar {
     flex-direction: column;
     justify-content: center;
+    height: 120px;
 
     &__logo {
-      margin-top: 2rem;
+      margin-top: 0.5rem;
       margin-left: 0;
     }
 
     &__pages {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       margin-right: 0;
     }
   }

@@ -5,7 +5,7 @@ import joinme from '../../assets/joinme.png'
 import './Projects.scss'
 
 const Projects = () => (
-  <>
+  <div className='projects' id='projects'>
     <div className='projects__section'>
       <h1 className='section__title'> Webspyder </h1>
       <p className='section__desc'>
@@ -147,7 +147,7 @@ const Projects = () => (
         <hr />
       </div>
     </div>
-  </>
+  </div>
 )
 
 export default Projects
