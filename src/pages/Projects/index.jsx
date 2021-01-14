@@ -2,6 +2,7 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 
 import joinme from '../../assets/joinme.png'
+import githubstats from '../../assets/githubstats.png'
 import './Projects.scss'
 
 const Projects = () => (
@@ -138,7 +139,7 @@ const Projects = () => (
         This is a personal project where I individually responsible for all technologies & designs.
       </p>
       <div className='section__media'>
-        <img src={joinme} alt='joinme' />
+        <img src={githubstats} alt='github project' />
       </div>
       <div className='section__links'>
         <a href='https://github.com/nannadao/github-stats'> Github </a>
