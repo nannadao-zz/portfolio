@@ -66,6 +66,14 @@ ul, li {
     &__pages {
       margin-top: 0.5rem;
       margin-right: 0;
+      
+      & > li {
+        margin: 0 10px;
+
+        > a {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
