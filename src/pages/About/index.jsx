@@ -29,7 +29,7 @@ const About = () => (
           </a>
         </li>
         <li>
-          <a href='https://www.linkedin.com/in/hoang-ngan-dao-2a5a04111/'>
+          <a href='https://www.linkedin.com/in/nanna-dao-2a5a04111/'>
             <i className='fab fa-linkedin fa-2x'></i>
           </a>
         </li>
